@@ -1,37 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável!</title>
+
     <link rel="stylesheet" href="style.css">
-    </title> Agro Forte, futuro sustentável!</title>
 </head>
 
 <body>
-    <header class="cabecalho">
-        <h1 class="cabecalho-titulo-principal">Agro é top, agro é tec</h1>
-        <div class="cabecalho-div-lita">
 
+    <header class="cabecalho">
+        <h1 class="cabecalho-titulo-principal">Agro é top, agro é tech 🌱</h1>
+
+        <nav class="cabecalho-menu">
             <ul>
-                <li class="cabecalho-item-lista">O problema</li>
-                <li class="cabecalho-item-lista">O desenvolvimento</li>
-                <li class="cabecalho-item-lista">A conclusão</li>
+                <li class="cabecalho-item-lista"><a href="#problema">O problema</a></li>
+                <li class="cabecalho-item-lista"><a href="#desenvolvimento">O desenvolvimento</a></li>
+                <li class="cabecalho-item-lista"><a href="#conclusao">A conclusão</a></li>
             </ul>
-        </div class="cabcalho-div-inversao">
-        <button class="cabecalho-titulo-botao">Inversão de cores🌗</button>
-        </div>
+        </nav>
+
+        <button id="botao-inversao" class="cabecalho-titulo-botao">
+            Inversão de cores 🌗
+        </button>
     </header>
 
-    <main class="contudo principal">
+    <main class="conteudo-principal">
+
+        <section id="problema" class="secao">
+            <h2>O problema</h2>
+            <p>
+                O campo enfrenta desafios como falta de tecnologia, desperdício de recursos naturais
+                e dificuldades na produção sustentável.
+            </p>
+        </section>
+
+        <section id="desenvolvimento" class="secao">
+            <h2>O desenvolvimento</h2>
+            <p>
+                Com o uso da tecnologia no agronegócio (Agro 4.0), sensores, drones e inteligência artificial
+                ajudam a aumentar a produção e reduzir impactos ambientais.
+            </p>
+        </section>
+
+        <section id="conclusao" class="secao">
+            <h2>A conclusão</h2>
+            <p>
+                O futuro do agro depende da inovação e da sustentabilidade, garantindo alimento para todos
+                com respeito ao meio ambiente.
+            </p>
+        </section>
 
     </main>
+
     <footer class="rodape">
-
-
+        <p>Projeto Agrinho 2026 - Desenvolvido por estudante 🌾</p>
     </footer>
 
-    </footer>
+    <script>
+        const botao = document.getElementById("botao-inversao");
+
+        botao.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
+
 </body>
 
-</html
+</html>

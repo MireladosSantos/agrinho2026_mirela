@@ -1,25 +1,76 @@
-style: /*Reset*/
-* {
-    margin: 0; /*margem do body zerada*/
-    padding: 0;  /*espaço interno do body zerado*/
-
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #222;
+    transition: 0.3s;
 }
 
+/* Cabeçalho */
 .cabecalho {
-    background-color: rgb(127, 177, 235);
-    /*cor de fundo*/
-    display: flex; /*flexibilidade dos elementos da lista ul*/
-    justify-content: space-between; /*espaços entre os elementos*/
-    align-items: center; /*alinhamento vertical dos itens no centro*/
-    height: 100px; /*altura da área do cabeçalho em 100 pixels*/
-}
-ul {
-display:flex; /*flexibilidade dos elementos da lista ul*/
-justify-content: space-between; /*espaços entre os elementos*/
-}
-.cabecalho-item-lista{
-    padding: 15px; /*espaçamento interno de cada item de 15pixels;*/
-    list-style-type: none; /*elimimano o ponto antes de cada item;*/
-
+    background-color: #2e7d32;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
+.cabecalho-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cabecalho-item-lista {
+    display: inline;
+    margin: 0 10px;
+}
+
+.cabecalho-item-lista a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Botão */
+.cabecalho-titulo-botao {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Conteúdo */
+.conteudo-principal {
+    padding: 20px;
+}
+
+.secao {
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    padding: 10px;
+    background: #1b5e20;
+    color: white;
+}
+
+/* Modo escuro */
+.dark-mode {
+    background-color: #3782d8;
+    color: #f1f1f1;
+}
+
+.dark-mode .secao {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .cabecalho {
+    background-color: #f9fffc00;
+}
+
+.dark-mode .rodape {
+    background-color: #9cc1f1;
+}
